@@ -4,7 +4,7 @@ import "./Sidebar.css";
 import logo from "./../../Assets/logo.png";
 import {IoMdSpeedometer} from 'react-icons/io'
 import {MdDeliveryDining, MdOutlineExplore, MdOutlinePermContactCalendar} from 'react-icons/md'
-import {BsTrophy, BsCreditCard2Front} from 'react-icons/bs'
+import {BsTrophy, BsCreditCard2Front, BsQuestionCircle} from 'react-icons/bs'
 import {AiOutlinePieChart} from 'react-icons/ai'
 import {BiTrendingUp} from 'react-icons/bi'
 
@@ -13,7 +13,7 @@ const Sidebar = () => {
     <div className="sideBar grid">
       <div className="logoDiv flex">
         <img src={logo} alt="Image Name" />
-        <h2>Plant Shop</h2>
+        <h2>Plantpedia</h2>
       </div>
 
       <div className="menuDiv">
@@ -86,6 +86,17 @@ const Sidebar = () => {
         </ul>
       </div>
 
+      <div className="sideBarCard">
+        <BsQuestionCircle className="icon"/>
+        <div className="cardContent">
+          <div className="circle1"></div>
+          <div className="circle2"></div>
+
+          <h3>Help Center</h3>
+          <p>Having trouble in Plantpedia? Please contact us for more info.</p>
+          <button className="btn">Help Center</button>
+        </div>
+      </div>
     </div>
   );
 };
