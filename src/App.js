@@ -1,9 +1,16 @@
 import React from 'react'
 import './App.css';
+import Sidebar from './Components/SideBar_Section/Sidebar';
+import Body from './Components/Body_Section/Body';
 
 const App = () => {
   return (
-    <div>App</div>
+    <>
+    <div className="container">
+      <Sidebar/>
+      <Body/>
+    </div>
+    </>
   )
 }
 
