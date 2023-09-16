@@ -5,7 +5,7 @@ import { TbMessageCircle } from "react-icons/tb";
 import { BsArrowRightShort, BsQuestionCircle } from "react-icons/bs";
 import { MdOutlineNotificationsNone } from "react-icons/md";
 import img from "../../../Assets/mahmud-alam.png";
-import img1 from "../../../Assets/img1.png";
+// import img1 from "../../../Assets/img1.png";
 import video from "../../../Assets/video.mp4";
 
 const Top = () => {
@@ -32,7 +32,7 @@ const Top = () => {
       </div>
 
       <div className="cardSection flex">
-        <div className="rightCard flex">
+        <div className="leftCard flex">
           <h1>Create and sell extraordinary products</h1>
           <p>
             The world's fast growing industry today are natural made products!
@@ -48,7 +48,7 @@ const Top = () => {
           </div>
         </div>
 
-        <div className="leftCard flex">
+        <div className="rightCard flex">
           <div className="main flex">
             <div className="textDiv">
               <h1>My Stat</h1>
@@ -69,24 +69,9 @@ const Top = () => {
               </span>
             </div>
 
-            <div className="imgDiv">
+            {/* <div className="imgDiv">
               <img src={img1} alt="" />
-            </div>
-{/*
-            <div className="sideBarCard">
-              <BsQuestionCircle className="icon" />
-              <div className="cardContent">
-                <div className="circle1"></div>
-                <div className="circle2"></div>
-
-                <h3>Help Center</h3>
-                <p>
-                  Having trouble in Plantpedia? Please contact us for more info.
-                </p>
-                <button className="btn">Help Center</button>
-              </div>
-            </div>
-*/}
+            </div> */}
           </div>
         </div>
       </div>

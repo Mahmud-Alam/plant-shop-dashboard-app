@@ -91,10 +91,10 @@
         margin-top: 3rem;
         gap: 1rem;
 
-        .rightCard{
+        .leftCard{
             position: relative;
-            flex-basis: 70%;
-            height: 200px;
+            flex-basis: 80%;
+            height: 240px;
             flex-direction: column;
             align-items: flex-start;
             justify-content: center;
@@ -158,13 +158,14 @@
             }
         }
 
-        .leftCard{
-            flex-basis: 50%;
+        .rightCard{
+            flex-basis: 25%;
 
             .main{
                 position: relative;
                 padding: 1rem;
-                height: 200px;
+                height: 240px;
+                width: 100%;
                 border-radius: 1rem;
                 justify-content: space-between;
 
@@ -172,7 +173,7 @@
                     content: '';
                     position: absolute;
                     height: 100%;
-                    width: 85%;
+                    width: 100%;
                     background: var(--paleGreen);
                     left: 0;
                     bottom: 0;
@@ -181,6 +182,7 @@
 
                 .textDiv{
                     z-index: 100;
+                    width: 100%;
 
                     h1{
                         font-size: var(--h1FontSize);
@@ -189,7 +191,7 @@
                     }
 
                     .flex{
-                        gap: 1.5rem;
+                        justify-content: space-between;
                         font-weight: 500;
                         color: var(--blackColor);
 
@@ -203,6 +205,8 @@
                     }
 
                     .link{
+                        justify-content: flex-start;
+                        gap: 1rem;
                         margin-top: 2rem;
                         cursor: pointer;
 
@@ -210,7 +214,7 @@
                             color: var(--PrimaryColor);
 
                             .icon{
-                                transform: translateX(10px);
+                                transform: translateX(20px);
                                 transition: .3s ease;
                             }
                         }
@@ -228,4 +232,17 @@
             }
         }
     }
+}
+
+
+@media screen and (max-width: 990px) {
+    .cardSection{
+        flex-direction: column;
+
+        .rightCard, .leftCard{
+            width: 100%;
+            flex-basis: 100%;
+        }
+    }
+    
 }

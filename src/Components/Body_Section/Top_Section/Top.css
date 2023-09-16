@@ -75,10 +75,10 @@
   margin-top: 3rem;
   gap: 1rem;
 }
-.topSection .cardSection .rightCard {
+.topSection .cardSection .leftCard {
   position: relative;
-  flex-basis: 70%;
-  height: 200px;
+  flex-basis: 80%;
+  height: 240px;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
@@ -87,7 +87,7 @@
   border-radius: 1rem;
   overflow: hidden;
 }
-.topSection .cardSection .rightCard .videoDiv {
+.topSection .cardSection .leftCard .videoDiv {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -96,97 +96,111 @@
   left: 0;
   right: 0;
 }
-.topSection .cardSection .rightCard .videoDiv video {
+.topSection .cardSection .leftCard .videoDiv video {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.topSection .cardSection .rightCard h1, .topSection .cardSection .rightCard p, .topSection .cardSection .rightCard .btn {
+.topSection .cardSection .leftCard h1, .topSection .cardSection .leftCard p, .topSection .cardSection .leftCard .btn {
   z-index: 100;
 }
-.topSection .cardSection .rightCard h1 {
+.topSection .cardSection .leftCard h1 {
   font-size: var(--h1FontSize);
   color: var(--whiteColor);
   font-weight: 800;
 }
-.topSection .cardSection .rightCard p {
+.topSection .cardSection .leftCard p {
   padding: 1rem;
   color: var(--paleGreen);
   font-weight: 500;
 }
-.topSection .cardSection .rightCard .buttons {
+.topSection .cardSection .leftCard .buttons {
   gap: 1rem;
 }
-.topSection .cardSection .rightCard .buttons .btn {
+.topSection .cardSection .leftCard .buttons .btn {
   color: var(--PrimaryColor);
   padding: 0.8rem 1.5rem;
   box-shadow: none;
   border: 2px solid transparent;
 }
-.topSection .cardSection .rightCard .buttons .transparent {
+.topSection .cardSection .leftCard .buttons .transparent {
   color: var(--paleGreen);
   background: none;
   border: 2px solid var(--paleGreen);
 }
-.topSection .cardSection .rightCard .buttons .transparent:hover {
+.topSection .cardSection .leftCard .buttons .transparent:hover {
   color: var(--PrimaryColor);
   background: var(--paleGreen);
 }
-.topSection .cardSection .leftCard {
-  flex-basis: 50%;
+.topSection .cardSection .rightCard {
+  flex-basis: 25%;
 }
-.topSection .cardSection .leftCard .main {
+.topSection .cardSection .rightCard .main {
   position: relative;
   padding: 1rem;
-  height: 200px;
+  height: 240px;
+  width: 100%;
   border-radius: 1rem;
   justify-content: space-between;
 }
-.topSection .cardSection .leftCard .main::before {
+.topSection .cardSection .rightCard .main::before {
   content: "";
   position: absolute;
   height: 100%;
-  width: 85%;
+  width: 100%;
   background: var(--paleGreen);
   left: 0;
   bottom: 0;
   border-radius: 1rem;
 }
-.topSection .cardSection .leftCard .main .textDiv {
+.topSection .cardSection .rightCard .main .textDiv {
   z-index: 100;
+  width: 100%;
 }
-.topSection .cardSection .leftCard .main .textDiv h1 {
+.topSection .cardSection .rightCard .main .textDiv h1 {
   font-size: var(--h1FontSize);
   padding: 1rem;
   color: var(--blackColor);
 }
-.topSection .cardSection .leftCard .main .textDiv .flex {
-  gap: 1.5rem;
+.topSection .cardSection .rightCard .main .textDiv .flex {
+  justify-content: space-between;
   font-weight: 500;
   color: var(--blackColor);
 }
-.topSection .cardSection .leftCard .main .textDiv .flex small {
+.topSection .cardSection .rightCard .main .textDiv .flex small {
   font-size: var(--normalFontSize);
   display: block;
   color: var(--PrimaryColor);
   font-weight: 500;
   padding: 0.5rem 0;
 }
-.topSection .cardSection .leftCard .main .textDiv .link {
+.topSection .cardSection .rightCard .main .textDiv .link {
+  justify-content: flex-start;
+  gap: 1rem;
   margin-top: 2rem;
   cursor: pointer;
 }
-.topSection .cardSection .leftCard .main .textDiv .link:hover {
+.topSection .cardSection .rightCard .main .textDiv .link:hover {
   color: var(--PrimaryColor);
 }
-.topSection .cardSection .leftCard .main .textDiv .link:hover .icon {
-  transform: translateX(10px);
+.topSection .cardSection .rightCard .main .textDiv .link:hover .icon {
+  transform: translateX(20px);
   transition: 0.3s ease;
 }
-.topSection .cardSection .leftCard .main .imgDiv {
+.topSection .cardSection .rightCard .main .imgDiv {
   z-index: 100;
 }
-.topSection .cardSection .leftCard .main .imgDiv img {
+.topSection .cardSection .rightCard .main .imgDiv img {
   width: 120px;
+}
+
+@media screen and (max-width: 990px) {
+  .cardSection {
+    flex-direction: column;
+  }
+  .cardSection .rightCard, .cardSection .leftCard {
+    width: 100%;
+    flex-basis: 100%;
+  }
 }/*# sourceMappingURL=Top.css.map */

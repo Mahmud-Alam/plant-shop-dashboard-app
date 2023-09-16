@@ -6,8 +6,8 @@ import img from "../../../Assets/img3.png";
 import img1 from "../../../Assets/img6.png";
 import img2 from "../../../Assets/img8.png";
 import img3 from "../../../Assets/img7.png";
-import img4 from "../../../Assets/img4.png";
-import img5 from "../../../Assets/img5.png";
+// import img4 from "../../../Assets/img4.png";
+// import img5 from "../../../Assets/img5.png";
 import user from "../../../Assets/mahmud-alam.jpg";
 import user1 from "../../../Assets/user1.jpg";
 import user2 from "../../../Assets/user2.jpg";
@@ -55,6 +55,22 @@ const Listing = () => {
           </div>
           <h3>Spider Plant</h3>
         </div>
+
+        {/* <div className="singleItem">
+          <AiOutlineHeart className="icon" />
+          <div className="imgDiv">
+            <img src={img4} alt="Image Name" />
+          </div>
+          <h3>Leaf Plant</h3>
+        </div>
+
+        <div className="singleItem">
+          <AiOutlineHeart className="icon" />
+          <div className="imgDiv">
+            <img src={img5} alt="Image Name" />
+          </div>
+          <h3>Beauty Garden</h3>
+        </div> */}
       </div>
 
       <div className="sellers flex">
