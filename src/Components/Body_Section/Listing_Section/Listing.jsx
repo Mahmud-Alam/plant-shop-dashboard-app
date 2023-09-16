@@ -55,22 +55,6 @@ const Listing = () => {
           </div>
           <h3>Spider Plant</h3>
         </div>
-
-        <div className="singleItem">
-          <AiOutlineHeart className="icon" />
-          <div className="imgDiv">
-            <img src={img4} alt="Image Name" />
-          </div>
-          <h3>Leaf Plant</h3>
-        </div>
-
-        <div className="singleItem">
-          <AiOutlineHeart className="icon" />
-          <div className="imgDiv">
-            <img src={img5} alt="Image Name" />
-          </div>
-          <h3>Beauty Garden</h3>
-        </div>
       </div>
 
       <div className="sellers flex">
