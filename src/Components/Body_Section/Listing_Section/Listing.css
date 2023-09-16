@@ -129,4 +129,20 @@
 }
 .listingSection .sellers .topSellers .card .cardText span small .date, .listingSection .sellers .featuredSellers .card .cardText span small .date {
   margin-left: 1rem;
+}
+
+@media screen and (max-width: 990px) {
+  .listingSection .sellers .card {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 970px) {
+  .listingSection .sellers h3 {
+    font-size: var(--h3FontSize);
+  }
+}
+@media screen and (max-width: 630px) {
+  .listingSection .sellers {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=Listing.css.map */

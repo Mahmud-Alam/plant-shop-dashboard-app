@@ -12,3 +12,16 @@
     }
 
 }
+
+
+@media screen and (max-width: 1190px) {
+    .bottom{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .mainContent{
+        width: 90%;
+    }
+}

@@ -33,7 +33,6 @@
         img{
             max-width: 20px;
             margin-right: .5rem;
-            background: var(--inputColor);
             border-radius: 2px;
             padding: .2rem;
         }
@@ -158,6 +157,114 @@
                 bottom: -80px;
                 right: -70px;
                 z-index: 1;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 990px) {
+    .sideBar{
+        padding-bottom: 2rem;
+
+        .sideBarCard{
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .sideBar{
+        .logoDiv{
+            margin: auto;
+            padding: 1.5rem .5rem 0;
+
+            img{
+                max-width: 50px;
+            }
+
+            h2{
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .sideBar{
+        width: 10%;
+
+        .logoDiv{
+            img{
+                max-width: 40px;
+            }
+        }
+
+        .divTitle, .smallText{
+            display: none;
+        }
+
+        .listItem{
+            .menuLink{
+                justify-content: center;
+
+                .icon{
+                    font-size: var(--h1FontSize);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .sideBar{
+        .logoDiv{
+            img{
+                max-width: 30px;
+            }
+        }
+
+        .menuDiv, .settingsDiv{
+            text-align: center;
+            margin: auto;
+
+            .menuLists{
+                .listItem{
+                    padding: .2rem 1rem;
+
+                    .menuLink{
+                        justify-content: center;
+
+                        .icon{
+                            font-size: var(--h2FontSize);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .sideBar{
+        .logoDiv{
+            padding: 0;
+            img{
+                max-width: 25px;
+            }
+        }
+
+        .menuDiv, .settingsDiv{
+            .menuLists{
+                .listItem{
+                    padding: .2rem .5rem;
+
+                    .menuLink{
+                        .icon{
+                            font-size: var(--h3FontSize);
+                        }
+                    }
+                }
             }
         }
     }
